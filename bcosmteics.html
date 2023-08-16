@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>BR cosmetics</title>
+	<link rel="stylesheet" href="css/fancySelect.css" />
+	<link rel="stylesheet" href="css/uniform.css" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link media="screen" rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <!-- https://fullcalendar.io/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/tooplate.css">
+
+</head>
+<style>
+	
+	 button, input[type="submit"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+}
+body{
+	background:none;
+	margin:0;
+	background-color:black;
+	color:white;
+}
+footer{
+	background-color:white;
+}
+form{
+	color:white;
+}
+@media (max-width: 768px) {
+	/* Styles for mobile devices */
+	body {
+		font-size: 16px;
+	}
+
+	/* Adjust other styles as needed */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	/* Styles for tablets */
+	body {
+		font-size: 18px;
+	}
+
+	/* Adjust other styles as needed */
+}
+
+@media (min-width: 993px) {
+	/* Styles for desktops */
+	body {
+		font-size: 20px;
+	}}
+
+</style>
+<body>
+<body id="reportsPage">
+    <div class="" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="{{ route('dashboard') }}">
+                            <i class=""></i>
+                            <h1 class="tm-site-title mb-0">BRCOSMETICS</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                
+                             
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+
+                               
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#products"> Products</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="#contact"> Contact Us</a>
+                                </li>    </li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="login.html"> Login </a>
+                                </li>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html"> Register</a>
+                            </li>
+								
+						
+                                
+                            </ul>
+                            <!-- <ul class="navbar-nav">
+                                <li class="nav-item">
+                                <form method="POST" action="{{ route('logout') }}" x-data>
+                                @csrf
+                                    <a class="nav-link d-flex" href="">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                    <button type="submit" >    <span>Logout</span></button>
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- row -->
+<!-- 	
+							<li>		<a href="{{ route('login') }}">Login</a></li>
+							<li>		<a href="{{ route('register') }}">Register</a></li>
+							
+					 -->
+			<section class="promo" >
+	
+				<br>
+				<ul class="slider">		<li style="background: url(images/RvPlEZmNMi-loreal-professionnel-jpg_2340x.webp) no-repeat 5% 5%;">
+			
+						<div class="slide-holder">		
+
+							<div class="slide-info">
+								<h1></h1>
+								<p></p>
+								<br>
+				<br>		<br>
+				<br>		<br>
+				<br>		<br>
+				<br><a href="products.html"><center><button class="btn">Explore</button></center></a>
+				
+							</div>
+						
+						</div>
+					</li>
+					<li style="background: url(images/summer.webp) no-repeat 5% 5%;">
+						<div class="slide-holder">
+							<div class="slide-info">
+								<h1></h1>
+								<p></p>
+								<br>
+								<br>		<br>
+								<br>		<br>
+								<br>		<br>
+								<br>
+								<a href="products.html"><center><button class="btn">Explore</button></center></a>
+					<li style="background: url(images/neutrogena-updated-jpg_2340x.webp) no-repeat 5% 5%;">
+						<div class="slide-holder">
+							<div class="slide-info">
+								<br>
+								<br>		<br>
+								<br>		<br>
+								<br>		<br>
+								<br>
+								<a href="products.html"><center><button class="btn">Explore</button></center></a>
+							</div>
+						</div>
+						
+					</li>
+					<li style="background: url(images/-flash-sale-upto-60-off-jpg_2340x.webp) no-repeat 5% 5%;">
+						<div class="slide-holder">
+							<div class="slide-info">
+								<br>
+								<br>		<br>
+								<br>		<br>
+								<br>		<br>
+								<br>
+								<a href="products.html"><center><button class="btn">Explore</button></center></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section id="main">
+				<br> <br>
+				<center><h3>Discount Offers </h3></center>
+				<br><br>
+				<div id="products" class="boxes">
+					<div class="box">
+						<a href="#">
+							<span class="bg"></span>
+							<img src="images/1.webp" alt="" />
+							<div class="box-info">
+								<div class="box-info-holder">
+			
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<span class="bg"></span>
+							<img src="images/2.webp" alt="" />
+							<div class="box-info">
+								<div class="box-info-holder">
+									<span class="title"><span>Sale</span></span>
+							
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<span class="bg"></span>
+							<img src="images/3.webp" alt="" />
+							<div class="box-info">
+								<div class="box-info-holder">
+									<span class="title"><span>Hot</span></span>
+								
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="boxes">
+					<div class="box">
+						<a href="#">
+							<span class="bg"></span>
+							<img src="images/6.webp" alt="" />
+							<div class="box-info">
+								<div class="box-info-holder">
+			
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<span class="bg"></span>
+							<img src="images/4.webp" alt="" />
+							<div class="box-info">
+								<div class="box-info-holder">
+									<span class="title"><span>Sale</span></span>
+							
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="#">
+							<span class="bg"></span>
+							<img src="images/5.webp" alt="" />
+							<div class="box-info">
+								<div class="box-info-holder">
+									<span class="title"><span>Hot</span></span>
+								
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<center><h4>Contact Us</h4></center>
+				<br> <br>			<form id="contact" method="post" action="{{URL::TO('/contactrec')}}">
+@csrf
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname">
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" >
+
+
+<label for="subject">Subject</label>
+<input type="text" id="lname" name="message" style="height: 150px;" >
+<br> <br>
+<button type="submit" class="btn btn-info">submit</button>
+
+
+</form>
+				</div>
+			</section>
+		</div>
+		<footer class="row tm-mt-small">
+                <div class="col-12 font-weight-light">
+					<br>
+                    <p class="d-inline-block tm-bg-black text-white py-2 px-4">
+                        Copyright &copy; 2018. Created by
+                        <a href="http://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a> |  Distributed by <a href="https://themewagon.com" class="text-white tm-footer-link">ThemeWagon</a>
+                    </p>
+                </div>
+            </footer>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/fancySelect.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+
